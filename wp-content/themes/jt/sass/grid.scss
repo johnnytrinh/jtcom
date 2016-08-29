@@ -1,0 +1,28 @@
+.col {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+//Grid
+.col-100 {
+  @extend .col;
+  width :100%;
+}
+.col-75 {
+  @extend .col;
+  width: 75%;
+}
+.col-50 {
+  @extend .col;
+  width: 50%;
+}
+.col-33 {
+  @extend .col;
+  width: 33.333333%;
+}
+.col-25 {
+  @extend .col;
+  width: 25%;
+}

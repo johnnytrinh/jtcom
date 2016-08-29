@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%; }
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .main-container a {
+    color: #000000;
+    text-decoration: none; }
+    .main-container a:hover {
+      color: #666666;
+      text-decoration: underline; }
+  .main-container p {
+    padding-top: 20px; }
+
+.half-margin-top {
+  margin-top: 10px; }
+
+.half-margin-bottom {
+  margin-bottom: 10px; }
+
+.half-margin-left {
+  margin-left: 10px; }
+
+.half-margin-right {
+  margin-right: 10px; }
+
+.base-margin-top {
+  margin-top: 20px; }
+
+.base-margin-bottom {
+  margin-bottom: 20px; }
+
+.base-margin-left {
+  margin-left: 20px; }
+
+.base-margin-right {
+  margin-left: 20px; }
+
+.double-margin-top {
+  margin-top: 40px; }
+
+.double-margin-bottom {
+  margin-bottom: 40px; }
+
+.double-margin-left {
+  margin-left: 40px; }
+
+.double-margin-right {
+  margin-right: 40px; }
+
+.base-margin-left {
+  margin-left: 20px; }
+
+.base-margin-right {
+  margin-right: 20px; }
+
+.enormous-margin-bottom {
+  margin-bottom: 600px; }
+
+.base-padding-left {
+  padding-left: 20px; }
+
+.base-padding-right {
+  padding-right: 20px; }
+
+.double-padding-left {
+  padding-left: 40px; }
+
+.double-padding-right {
+  padding-right: 40px; }
+
+.center {
+  text-align: center; }
+
+.text-huge {
+  font-size: 80px; }
+
+.text-large {
+  font-size: 52px; }
+
+.text-medium {
+  font-size: 36px; }
+
+.text-small {
+  font-size: 26px; }
+
+.text-tiny {
+  font-size: 18px; }
+
+.text-body {
+  font-size: 21px;
+  color: #222222; }
+
+.leading-medium {
+  line-height: 125%; }
+
+.leading-large {
+  line-height: 150%; }
+
+.leading-huge {
+  line-height: 165%; }
+
+.italic {
+  font-style: italic; }
+
+.col, .col-100, .col-75, .col-50, .col-33, .col-25 {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  position: relative; }
+
+.col-100 {
+  width: 100%; }
+
+.col-75 {
+  width: 75%; }
+
+.col-50 {
+  width: 50%; }
+
+.col-33 {
+  width: 33.333333%; }
+
+.col-25 {
+  width: 25%; }
+
+.site-header a {
+  text-decoration: none; }
+
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+  display: none; }
+
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+  display: block; }
+
+@media screen and (max-width: 768px) {
+  .col-33 {
+    width: 100%; } }
+
+.hidden {
+  visibility: hidden; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+/*# sourceMappingURL=main.css.map */
