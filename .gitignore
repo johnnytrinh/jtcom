@@ -1,0 +1,10 @@
+.idea/
+vendor
+wp-config.php
+wp-content/uploads/
+wp-content/plugins/*
+admin
+npm-debug.log
+composer.lock
+composer.phar
+node_modules

@@ -1,0 +1,34 @@
+{
+    "author": "INTERBRAND",
+    "name": "interbrand",
+    "version": "2.0.0",
+    "homepage": "http://interbrand.com",
+    "dependencies": {},
+    "browserify-shim": {
+        "jquery": "global:$"
+    },
+    "devDependencies": {
+        "gulp": "~3.9.0",
+        "gulp-sass": "~2.3.1",
+        "gulp-sourcemaps": "~1.1.5",
+        "gulp-rename": "~1.2.0",
+        "gulp-clean": "~0.3.1",
+        "gulp-jshint": "~1.8.4",
+        "jshint-stylish": "~0.4.0",
+        "gulp-autoprefixer": "~1.0.1",
+        "gulp-cssmin": "~0.1.6",
+        "gulp-uglify": "~1.0.1",
+        "gulp-concat": "~2.4.1",
+        "gulp-bower": "0.0.10",
+        "combined-stream": "0.0.5",
+        "load-grunt-tasks": "~0.4.0",
+        "jshint-stylish": "~0.2.0",
+        "browserify": "~3.46.0",
+        "browserify-shim": "~3.4.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@ibweiovprsgit02.interbrand.com:Interbrand/cosmos.git"
+    }
+}
+
