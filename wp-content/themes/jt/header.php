@@ -21,7 +21,10 @@
 <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo( 'template_directory'); ?>/vendor/jquery/dist/jquery.min.js"
 <script src="<?php bloginfo( 'template_directory' ); ?>/vendor/js/main.js"></script>
+<script src="https://use.typekit.net/kmq8nrb.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+<link href="{{theme_location}}/img/favicon.ico" rel="shortcut icon" />
 
 <?php wp_head(); ?>
 

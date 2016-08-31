@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700; }
 
 ol, ul {
   list-style: none; }
@@ -44,6 +45,16 @@ table {
 
 img {
   max-width: 100%; }
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+  /* WebKit/Blink Browsers */ }
+
+::selection {
+  background: #000;
+  color: #fff;
+  /* WebKit/Blink Browsers */ }
 
 .main-container {
   max-width: 1200px;
@@ -99,6 +110,18 @@ img {
 .base-margin-right {
   margin-right: 20px; }
 
+.quad-margin-top {
+  margin-top: 80px; }
+
+.quad-margin-bottom {
+  margin-bottom: 80px; }
+
+.quad-margin-left {
+  margin-left: 80px; }
+
+.quad-margin-right {
+  margin-right: 80px; }
+
 .enormous-margin-bottom {
   margin-bottom: 600px; }
 
@@ -152,7 +175,9 @@ img {
   box-sizing: border-box;
   display: block;
   float: left;
-  position: relative; }
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .col-100 {
   width: 100%; }
@@ -169,6 +194,33 @@ img {
 .col-25 {
   width: 25%; }
 
+.row {
+  width: 100%; }
+
+.row:after {
+  content: ' ';
+  clear: both;
+  display: block;
+  width: 100%; }
+
+.row-100-percent {
+  width: 100%; }
+
+.row-75-percent {
+  width: 75%; }
+
+.row-50-percent {
+  width: 50%; }
+
+.row-33-percent {
+  width: 33.33333333333333%; }
+
+.row-25-percent {
+  width: 25%; }
+
+.content-container {
+  padding: 20px; }
+
 .site-header a {
   text-decoration: none; }
 
@@ -181,9 +233,56 @@ img {
 .infinity-end.neverending #footer {
   display: block; }
 
+.skills ul {
+  font-size: 30px;
+  margin: 20px 0 20px 0; }
+
+.menu li {
+  display: inline; }
+
+.menu .menu-item {
+  padding: 0 20px 0 20px; }
+
 @media screen and (max-width: 768px) {
   .col-33 {
     width: 100%; } }
+
+.row.is-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.row.is-flex > [class*='col-'] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.row.is-flex > [class*='col-'] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.inline-element {
+  min-height: 175px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  _height: 250px; }
 
 .hidden {
   visibility: hidden; }
@@ -193,5 +292,17 @@ img {
 
 .pull-right {
   float: right; }
+
+.proxima-nova-regular {
+  font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400; }
+
+.proxima-nova-bold {
+  font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700; }
+
+.proxima-nova-extra-bold {
+  font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 800; }
 
 /*# sourceMappingURL=main.css.map */

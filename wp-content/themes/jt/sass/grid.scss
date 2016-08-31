@@ -1,8 +1,13 @@
+//Supporting grid columns + rows
+
+//columns
 .col {
   box-sizing: border-box;
   display: block;
   float: left;
   position: relative;
+  padding-left:$basePadding;
+  padding-right:$basePadding;
 }
 
 //Grid
@@ -24,5 +29,35 @@
 }
 .col-25 {
   @extend .col;
+  width: 25%;
+}
+
+//rows
+.row {
+  width: 100%;
+}
+.row:after {
+  content: ' ';
+  clear: both;
+  display: block;
+  width: 100%;
+}
+.row-100-percent {
+  width: 100%;
+}
+
+.row-75-percent {
+  width: 75%;
+}
+
+.row-50-percent {
+  width: 50%;
+}
+
+.row-33-percent {
+  width: 33.33333333333333%;
+}
+
+.row-25-percent {
   width: 25%;
 }

@@ -13,3 +13,12 @@
 .infinity-end.neverending #footer {
   display: block;
 }
+
+//Skills
+
+.skills {
+  ul {
+    font-size: $text-medium;
+    margin: $baseMargin 0 $baseMargin 0;
+  }
+}

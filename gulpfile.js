@@ -54,7 +54,7 @@ gulp.task('watch', function() {
 
     // Watch all .scss files in the ./public/assets/sass/ folder.
     // Recusivly check /**/ any subfolders for .sass files as well
-    gulp.watch('./wp-content/themes/interbrand/sass/**/*.scss', ['sass']);
+    gulp.watch('./wp-content/themes/jt/sass/**/*.scss', ['sass']);
     gulp.watch('./wp-content/themes/**/*.scss', ['sass']);
     gulp.watch('./wp-content/themes/jt/js/**/*.js', ['lint']);
 });

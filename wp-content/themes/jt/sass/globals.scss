@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: $helvetica;
+  font-family: $proxima-nova-bold;
+  font-weight: 700;
 }
 ol, ul {
   list-style: none;
@@ -46,6 +47,11 @@ table {
 
 img {
   max-width:100%;
+}
+
+::selection {
+  background: #000;
+  color: #fff; /* WebKit/Blink Browsers */
 }
 
 .main-container {
@@ -107,24 +113,43 @@ img {
 .base-margin-right {
   margin-right: $baseMargin;
 }
+//Quad Margins
+.quad-margin-top {
+  margin-top: $quadMargin;
+}
+.quad-margin-bottom {
+  margin-bottom: $quadMargin;
+}
+.quad-margin-left {
+  margin-left: $quadMargin;
+}
+.quad-margin-right{
+  margin-right: $quadMargin;
+}
 .enormous-margin-bottom {
   margin-bottom: 600px;
 }
 
+// Padding
+$basePadding: 20px;
+$halfPadding: $basePadding / 2;
+$doublePadding: $basePadding * 2;
+$quarterMargin: $halfMargin / 2;
+
 //Padding classes
 .base-padding-left {
-  padding-left: $baseMargin;
+  padding-left: $basePadding;
 
 }
 .base-padding-right{
-  padding-right: $baseMargin;
+  padding-right: $basePadding;
 
 }
 .double-padding-left {
-  padding-left: $doubleMargin;
+  padding-left: $doublePadding;
 }
 .double-padding-right {
-  padding-right: $doubleMargin;
+  padding-right: $doublePadding;
 }
 .center {
   text-align: center;
@@ -170,3 +195,4 @@ img {
 .italic {
   font-style: italic;
 }
+
