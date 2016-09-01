@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Work Single
+ * Template Name: Contact
  *
  * @package WordPress
  * @subpackage JT
@@ -10,29 +10,12 @@
 get_header(); ?>
 
     <div class="main-container">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main contact">
 
-            <div class="featured-image">
-                <?php the_post_thumbnail(); ?>
-            </div>
-
-            <div class="text-large base-margin-top base-margin-bottom"><h1><?php echo the_title(); ?></h1></div>
-
-
-            <div class="col-75">
-                <div class="base-margin-top base-margin-bottom">
-                    <?php
-                    if ( have_posts() ) : while ( have_posts() ) : the_post();
-                        the_content();
-                    endwhile;
-                    else:
-                    endif;?>
-                </div>
-            </div>
 
             <?php
 
-            //images
+            //image gallery
             $images = get_field('images');
 
             if( $images ): ?>
@@ -47,6 +30,18 @@ get_header(); ?>
                     <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
+
+
+            <div class="col-75">
+                <div class="base-margin-top base-margin-bottom text-medium leading-medium">
+                    <?php
+                    if ( have_posts() ) : while ( have_posts() ) : the_post();
+                        the_content();
+                    endwhile;
+                    else:
+                    endif;?>
+                </div>
+            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->
