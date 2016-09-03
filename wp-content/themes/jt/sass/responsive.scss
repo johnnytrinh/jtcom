@@ -1,9 +1,64 @@
+//Large Screens - 1200px
+@media screen and (max-width: $screen-lg) {
 
 
+
+}
+
+
+//Medium Screens - 992px
+@media screen and (max-width:$screen-md) {
+
+}
+
+
+//Small Screens - 768px
 @media screen and (max-width:$screen-sm) {
 
   .col-33 {
     width: 100%;
     }
+
+  #site-navigation {
+    background-color: $black;
+    width: 100%;
+    a {
+      color: $white;
+    }
+  }
+
+  .menu {
+    display: none;
+    padding: $baseMargin;
+    li {
+      padding: $basePadding 0 $basePadding 0!important;
+      display: block;
+      text-align: center;
+    }
+  }
+
+//  nav {
+//    display: none;
+//  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+
+
+}
+
+//Small Extra Small - 480px
+@media screen and (max-width:$screen-xs) {
+
+  .col-33 {
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
 
 }

@@ -18,13 +18,14 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 
-<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo( 'template_directory'); ?>/vendor/jquery/dist/jquery.min.js"
-<script src="<?php bloginfo( 'template_directory' ); ?>/vendor/js/main.js"></script>
-<script src="https://use.typekit.net/kmq8nrb.js"></script>
+<script type='text/javascript' src="<?php bloginfo( 'template_directory'); ?>/vendor/jquery/dist/jquery.min.js"
+<script type='text/javascript' src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
+<script type='text/javascript' src="https://use.typekit.net/kmq8nrb.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <link href="{{theme_location}}/img/favicon.ico" rel="shortcut icon" />
+
+
 
 <?php wp_head(); ?>
 
@@ -47,7 +48,7 @@ Website by @superdopesauce
 <!--	<a class="skip-link screen-reader-text" href="#main">--><?php //esc_html_e( 'Skip to content', 'mvl' ); ?><!--</a>-->
 
 	<header id="masthead" class="main-container" role="banner">
-		<div class="base-margin-top base-margin-bottom">
+		<div class="col-100 base-margin-top base-margin-bottom">
 
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -62,15 +63,24 @@ Website by @superdopesauce
 
 
             <nav id="site-navigation" class="main-navigation text-medium base-margin-top pull-right" role="navigation ">
+                <div class="nav-toggle" >
+                    <div class="hamburger">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                        <div class="line line4"></div>
+                    </div>
+                </div>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+
             </nav>
             <!-- #site-navigation -->
 
             <div style="clear: both;"></div>
 
         </div><!-- .site-branding -->
-
-
+        
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

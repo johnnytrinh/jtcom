@@ -12,33 +12,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package mvl
+ * @package jt
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses mvl_header_style()
+ * @uses jt_header_style()
  */
-function mvl_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'mvl_custom_header_args', array(
+function jt_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'jt_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'mvl_header_style',
+		'wp-head-callback'       => 'jt_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'mvl_custom_header_setup' );
+add_action( 'after_setup_theme', 'jt_custom_header_setup' );
 
-if ( ! function_exists( 'mvl_header_style' ) ) :
+if ( ! function_exists( 'jt_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see mvl_custom_header_setup().
+ * @see jt_custom_header_setup().
  */
-function mvl_header_style() {
+function jt_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div class="main-container">
-    <div class="content-container">
+    <div id="about" class="content-container">
 <!--    <h1>--><?php //echo get_the_title(); ?><!--</h1>-->
 
     <!--intro-->
@@ -170,10 +170,38 @@ get_header(); ?>
         ?>
     </div>
 
+    <div class="row is-flex">
+        <?php
+        /*programming languages*/
+        echo '<div class="col-25 skills">';
+        echo '<ul>';
+        $count = 0;
+        while (have_rows('software')) {
+        the_row();
+        if ($count > 0 && ($count % 7 == 0)) {
+        ?>
+        </ul>
+    </div>
 
+        <div class="col-25 skills">
+            <ul>
+                <?php }
+                ?>
+                <li><?php the_sub_field('software'); ?> </li>
+                <?php
+                $count++;
+                }
+                echo  '</ul>';
+                echo '</div>';
+        ?>
 
 
     </div>
+
+
+
+
+        </div>
 </div>
 
 

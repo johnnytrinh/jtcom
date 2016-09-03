@@ -16,7 +16,7 @@
 
 	<footer id="colophon" class="main-container" role="contentinfo">
 		<div class="col-100 double-margin-top double-margin-bottom">
-			<div class="pull-right">Johnny Trinh, <?php echo date("Y"); ?></div>
+			<div class="pull-right">Johnny Trinh, <?php echo date("Y"); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

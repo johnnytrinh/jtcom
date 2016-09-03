@@ -26,7 +26,7 @@ get_header(); ?>
                 <a href="<?php the_permalink() ?>">
                     <?php the_post_thumbnail(); ?>
                     <h2><?php the_title(); ?></h2>
-                    <p><?php echo get_the_excerpt(); ?></p>
+<!--                    <p>--><?php //echo get_the_excerpt(); ?><!--</p>-->
                 </a>
             </div>
 
