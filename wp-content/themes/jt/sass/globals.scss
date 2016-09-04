@@ -1,0 +1,198 @@
+//Reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: $proxima-nova-bold;
+  font-weight: 700;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width:100%;
+}
+
+::selection {
+  background: #000;
+  color: #fff; /* WebKit/Blink Browsers */
+}
+
+.main-container {
+  max-width: $screen-lg;
+  margin: 0 auto;
+  a {
+    color: $black;
+    text-decoration: none;
+    &:hover{
+      color: $grey;
+      text-decoration: underline;
+    }
+  }
+  p {
+    padding-top: $baseMargin;
+  }
+}
+
+//Margin classes
+.half-margin-top {
+  margin-top: $halfMargin;
+}
+.half-margin-bottom {
+  margin-bottom: $halfMargin;
+}
+.half-margin-left {
+  margin-left: $halfMargin;
+}
+.half-margin-right {
+  margin-right: $halfMargin;
+}
+.base-margin-top {
+  margin-top: $baseMargin;
+}
+.base-margin-bottom {
+  margin-bottom: $baseMargin;
+}
+.base-margin-left{
+  margin-left: $baseMargin;
+}
+.base-margin-right{
+  margin-left: $baseMargin;
+}
+.double-margin-top {
+  margin-top: $doubleMargin;
+}
+.double-margin-bottom {
+  margin-bottom: $doubleMargin;
+}
+.double-margin-left {
+  margin-left: $doubleMargin;
+}
+.double-margin-right{
+  margin-right: $doubleMargin;
+}
+.base-margin-left {
+  margin-left: $baseMargin;
+}
+.base-margin-right {
+  margin-right: $baseMargin;
+}
+//Quad Margins
+.quad-margin-top {
+  margin-top: $quadMargin;
+}
+.quad-margin-bottom {
+  margin-bottom: $quadMargin;
+}
+.quad-margin-left {
+  margin-left: $quadMargin;
+}
+.quad-margin-right{
+  margin-right: $quadMargin;
+}
+.enormous-margin-bottom {
+  margin-bottom: 600px;
+}
+
+// Padding
+$basePadding: 20px;
+$halfPadding: $basePadding / 2;
+$doublePadding: $basePadding * 2;
+$quarterMargin: $halfMargin / 2;
+
+//Padding classes
+.base-padding-left {
+  padding-left: $basePadding;
+
+}
+.base-padding-right{
+  padding-right: $basePadding;
+
+}
+.double-padding-left {
+  padding-left: $doublePadding;
+}
+.double-padding-right {
+  padding-right: $doublePadding;
+}
+.center {
+  text-align: center;
+}
+
+// Text
+.text-huge {
+  font-size: 80px;
+  //letter-spacing: -3px;
+}
+.text-large {
+  font-size: 52px;
+  //letter-spacing: -2px;
+}
+.text-medium {
+  font-size: 36px;
+  //letter-spacing: -1px;
+}
+.text-small {
+  font-size: 26px;
+  //letter-spacing: 0;
+}
+.text-tiny {
+  font-size: 18px;
+  //letter-spacing: 0;
+}
+.text-body {
+  font-size: 21px;
+  color: #222222;
+  //letter-spacing: 0;
+}
+
+// Leading
+.leading-medium {
+  line-height: 125%;
+}
+.leading-large {
+  line-height: 150%;
+}
+.leading-huge {
+  line-height: 165%;
+}
+.italic {
+  font-style: italic;
+}
+

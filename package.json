@@ -8,10 +8,10 @@
         "jquery": "global:$"
     },
     "devDependencies": {
-        "gulp": "~3.9.0",
-        "gulp-sass": "~2.3.1",
-        "gulp-sourcemaps": "~1.1.5",
-        "gulp-rename": "~1.2.0",
+        "gulp": "~3.9.1",
+        "gulp-sass": "~2.3.2",
+        "gulp-sourcemaps": "~1.6.0",
+        "gulp-rename": "~1.2.2",
         "gulp-clean": "~0.3.1",
         "gulp-jshint": "~1.8.4",
         "jshint-stylish": "~0.4.0",
@@ -23,8 +23,8 @@
         "combined-stream": "0.0.5",
         "load-grunt-tasks": "~0.4.0",
         "jshint-stylish": "~0.2.0",
-        "browserify": "~3.46.0",
-        "browserify-shim": "~3.4.1"
+        "browserify": "~13.1.0",
+        "browserify-shim": "~3.8.12"
     },
     "repository": {
         "type": "git",

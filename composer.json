@@ -14,11 +14,17 @@
                     "fancyguy/webroot-installer": "1.0.0"
                 }
             }
+        },
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
         }
     ],
     "require": {
         "wordpress": "4.*",
-        "fancyguy/webroot-installer": "1.0.0"
+        "fancyguy/webroot-installer": "1.0.0",
+        "wpackagist-plugin/custom-post-type-ui": "1.4.1",
+        "wpackagist-plugin/wordpress-seo": "3.4.2"
     },
     "extra": {
         "webroot-dir": "admin",
