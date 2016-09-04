@@ -25,7 +25,7 @@ get_header(); ?>
             <div class="col-50">
                 <a href="<?php the_permalink() ?>">
                     <?php the_post_thumbnail(); ?>
-                    <h2><?php the_title(); ?></h2>
+                    <div class="text-large base-margin-bottom"><h2><?php the_title(); ?></h2></div>
 <!--                    <p>--><?php //echo get_the_excerpt(); ?><!--</p>-->
                 </a>
             </div>

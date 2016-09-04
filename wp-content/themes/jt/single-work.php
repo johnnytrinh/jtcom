@@ -16,17 +16,56 @@ get_header(); ?>
                 <?php the_post_thumbnail(); ?>
             </div>
 
-            <div class="text-large base-margin-top base-margin-bottom"><h1><?php echo the_title(); ?></h1></div>
+            <div class="row">
+                <div class="col-100 text-large double-margin-top base-margin-bottom">
+                    <h1><?php the_field('client'); ?></h1>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-100">
+                    <div class="base-margin-bottom text-small leading-medium">
+                        <?php
+                        if ( have_posts() ) : while ( have_posts() ) : the_post();
+                            the_content();
+                        endwhile;
+                        else:
+                        endif;?>
+                    </div>
+                </div>
+            </div>
 
-            <div class="col-75">
-                <div class="base-margin-top base-margin-bottom">
+            <div class="row">
+                <div class="col-100 base-margin-bottom">
                     <?php
-                    if ( have_posts() ) : while ( have_posts() ) : the_post();
-                        the_content();
-                    endwhile;
+
+                     $field_name = "link";
+                     $field = get_field_object($field_name);
+
+                    if(get_field('link') ):
+                        echo $field['label'] . ': ' . '<a href="' . $field['value'] .'" target="_blank">' . $field['value'] . '</a>';
                     else:
-                    endif;?>
+                        //empty
+                    endif;
+
+                        ?>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quad-margin-bottom">
+                    <?php
+
+                    $field_name = "credits";
+                    $field = get_field_object($field_name);
+
+                    if(get_field('credits') ):
+                        echo $field['label']  . ': ' . $field['value'] . '</a>';
+                    else:
+                        //empty
+                    endif;
+
+                    ?>
                 </div>
             </div>
 
