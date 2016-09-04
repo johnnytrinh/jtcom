@@ -15,9 +15,6 @@
 //Small Screens - 768px
 @media screen and (max-width:$screen-sm) {
 
-  .col-33 {
-    width: 100%;
-    }
 
   #site-navigation {
     background-color: $black;
@@ -37,12 +34,22 @@
     }
   }
 
-//  nav {
-//    display: none;
-//  }
+  //grid
+  .col-33 {
+    width: 100%;
+  }
+
+  .col-25 {
+    width: 50%;
+  }
 
   .nav-toggle {
     display: block;
+  }
+
+  //typography
+  .text-large {
+    font-size: 42px;
   }
 
 
@@ -52,13 +59,22 @@
 //Small Extra Small - 480px
 @media screen and (max-width:$screen-xs) {
 
+  //grid
   .col-33 {
     width: 100%;
+  }
+
+  .col-25 {
+    width: 50%;
   }
 
   .nav-toggle {
     display: block;
   }
 
+  //typography
+  .text-large {
+    font-size: 30px;
+  }
 
 }

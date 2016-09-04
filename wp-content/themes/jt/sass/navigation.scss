@@ -14,45 +14,45 @@
   right: 20px;
   top: 25px;
   cursor: pointer;
-  .hamburger {
-    height: 20px;
-    width: 20px;
-    &:hover {
-      .line {
-        background-color: $black;
+    .hamburger {
+      height: 20px;
+      width: 20px;
+      &:hover {
+        .line {
+          background-color: $black;
+        }
       }
-    }
-    .line {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .25s ease-in-out;
-      -moz-transition: .25s ease-in-out;
-      -o-transition: .25s ease-in-out;
-      transition: .25s ease-in-out;
-      background-color: $black;
-      height: 4px;
-      left: 0px;
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-      position: absolute;
-      right: 0px;
-    }
-    .line1 {
-      margin: 0px;
-      top: 0px;
-    }
-    .line2,
-    .line3 {
-      left: 0px;
-      margin-top: -2px;
-      right: 0px;
-      top: 50%;
-    }
-    .line4 {
-      margin-top: -4px;
-      top: 100%;
-    }
+      .line {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        background-color: $black;
+        height: 4px;
+        left: 0px;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        position: absolute;
+        right: 0px;
+      }
+      .line1 {
+        margin: 0px;
+        top: 0px;
+      }
+      .line2,
+      .line3 {
+        left: 0px;
+        margin-top: -2px;
+        right: 0px;
+        top: 50%;
+      }
+      .line4 {
+        margin-top: -4px;
+        top: 100%;
+      }
   }
 }

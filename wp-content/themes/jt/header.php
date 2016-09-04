@@ -23,7 +23,7 @@
 <script type='text/javascript' src="https://use.typekit.net/kmq8nrb.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-<link href="{{theme_location}}/img/favicon.ico" rel="shortcut icon" />
+<link href="<?php bloginfo( 'template_directory'); ?>/img/favicon.ico" rel="shortcut icon" />
 
 
 

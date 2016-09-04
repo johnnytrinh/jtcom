@@ -276,8 +276,6 @@ img {
       top: 100%; }
 
 @media screen and (max-width: 768px) {
-  .col-33 {
-    width: 100%; }
   #site-navigation {
     background-color: #000000;
     width: 100%; }
@@ -290,14 +288,24 @@ img {
       padding: 20px 0 20px 0 !important;
       display: block;
       text-align: center; }
+  .col-33 {
+    width: 100%; }
+  .col-25 {
+    width: 50%; }
   .nav-toggle {
-    display: block; } }
+    display: block; }
+  .text-large {
+    font-size: 42px; } }
 
 @media screen and (max-width: 480px) {
   .col-33 {
     width: 100%; }
+  .col-25 {
+    width: 50%; }
   .nav-toggle {
-    display: block; } }
+    display: block; }
+  .text-large {
+    font-size: 30px; } }
 
 .row.is-flex {
   display: -ms-flexbox;
@@ -339,14 +347,14 @@ img {
 .hidden {
   visibility: hidden; }
 
+.show {
+  display: block; }
+
 .pull-left {
   float: left; }
 
 .pull-right {
   float: right; }
-
-.show {
-  display: block; }
 
 .proxima-nova-regular {
   font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;

@@ -15,7 +15,7 @@ get_header(); ?>
 
     <!--intro-->
     <div class="row">
-        <div class="col-100 text-large leading-small base-margin-top quad-margin-bottom">
+        <div class="col-100 text-large leading-small double-margin-top quad-margin-bottom">
 
             <?php the_field('intro_text'); ?>
 
@@ -30,6 +30,7 @@ get_header(); ?>
         </div>
 
         <?php
+
            /*programming languages*/
            echo '<div class="col-25 skills">';
                 echo '<ul>';
@@ -57,7 +58,8 @@ get_header(); ?>
             /*version control software*/
             echo '<div class="col-25 skills">';
                 echo '<ul>';
-                // check if the repeater field has rows of data
+
+                        // check if the repeater field has rows of data
                 if( have_rows('version_control_software') ):
                     // loop through the rows of data
                     while ( have_rows('version_control_software') ) : the_row();

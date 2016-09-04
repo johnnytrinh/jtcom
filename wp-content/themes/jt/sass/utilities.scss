@@ -1,13 +1,15 @@
 .hidden {
   visibility: hidden;
 }
-.pull-left {
-  float: left;
-}
-.pull-right {
-  float: right;
-}
 
 .show {
   display:block;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
