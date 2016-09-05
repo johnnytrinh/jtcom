@@ -109,7 +109,7 @@ gulp.task('js_bin', ['bin_clean'], function () {
 gulp.task('bin', ['css_bin', 'js_bin']);
 
 //execute "gulp bower" - command builds vendor dependencies
-//installs to a vendor folder within ./public/assets/vendor
+//installs to a vendor folder within ./wp-content/themes/jt/vendor/
 gulp.task('bower', function() {
     return bower()
         .pipe(gulp.dest('./wp-content/themes/jt/vendor/'))
