@@ -81,7 +81,7 @@ get_header(); ?>
                             <!--                       <a href="--><?php //echo $image['url']; ?><!--">-->
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <!--                        </a>-->
-                            <p><?php echo $image['caption']; ?></p>
+                            <div class="pull-right base-margin-bottom"><?php echo $image['caption']; ?></div>
                         </li>
                     <?php endforeach; ?>
                 </ul>
