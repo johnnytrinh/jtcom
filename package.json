@@ -1,8 +1,8 @@
 {
-    "author": "INTERBRAND",
-    "name": "interbrand",
+    "author": "Johnny Trinh",
+    "name": "JT",
     "version": "2.0.0",
-    "homepage": "http://interbrand.com",
+    "homepage": "http://johnnytrinh.com",
     "dependencies": {},
     "browserify-shim": {
         "jquery": "global:$"
