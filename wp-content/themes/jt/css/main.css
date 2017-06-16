@@ -63,7 +63,7 @@ img {
     color: #000000;
     text-decoration: none; }
     .main-container a:hover {
-      color: #666666;
+      color: #999999;
       text-decoration: underline; }
   .main-container p {
     padding-top: 20px; }
@@ -231,7 +231,7 @@ img {
   display: block; }
 
 .skills ul {
-  font-size: 30px;
+  font-size: 21px;
   margin: 20px 0 20px 0; }
 
 .menu li {
@@ -370,5 +370,14 @@ img {
 .proxima-nova-extra-bold {
   font-family: "proxima-nova", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 800; }
+
+.color-black {
+  color: #000000; }
+
+.color-white {
+  color: #FFFFFF; }
+
+.color-grey {
+  color: #999999; }
 
 /*# sourceMappingURL=main.css.map */

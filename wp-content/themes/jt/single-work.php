@@ -69,6 +69,7 @@ get_header(); ?>
                 </div>
             </div>
 
+            <div clas="row">
             <?php
 
             //images
@@ -77,7 +78,7 @@ get_header(); ?>
             if( $images ): ?>
                 <ul>
                     <?php foreach( $images as $image ): ?>
-                        <li>
+                        <li class="col-50">
                             <!--                       <a href="--><?php //echo $image['url']; ?><!--">-->
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <!--                        </a>-->
@@ -86,6 +87,7 @@ get_header(); ?>
                     <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
+            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->
